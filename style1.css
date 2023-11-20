@@ -1,0 +1,177 @@
+ 
+ body {
+    box-sizing: border-box;
+    margin: 0px 10% ;
+    font-family: 'Kumbh Sans', sans-serif;
+ }
+ 
+ 
+ /* head of page */
+
+.header {
+   display: flex;
+   align-items: center;
+   padding: 2%;
+
+ }
+
+ li a {
+    text-decoration: none;
+    color: gray;
+    margin-right: 3vh;
+ 
+    
+ }
+
+ li {
+    list-style-type: none;
+    display: inline-block ;
+ }
+
+ nav + img {
+    margin-left: auto;
+    margin-right: 5%;
+ }
+
+ li a:hover {
+
+    border-bottom: 4px hsl(26, 100%, 55%) solid ;
+    padding-bottom: 4px;
+ }
+
+
+
+ /* light box and photo grid */
+
+ 
+ .grid {
+    margin-top:4%;
+    display: grid;
+    grid-template-columns:repeat(2,minmax(0, 1fr));
+    height: 80vh;
+    gap:5%;
+    
+ }
+
+ .product-image {
+    width: 90%;
+    height:auto;
+    border-radius: 1.2em;
+    grid-column: 1/5;
+    
+
+}
+
+.responsive {
+    width: 70%;
+     height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+
+.responsive:hover {
+    color: white;
+    opacity: 0.5;
+}
+ 
+ .container1 {
+    display: grid;
+    grid-template-columns:repeat(4 , minmax(auto, 1fr));
+    height: 80vh;
+   
+
+}
+
+
+/* content box */
+
+.container2 {
+   
+    margin: 2em 0px ;
+    
+}
+
+.add-to-cart-button {
+ 
+    text-align: center;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border-radius:7px;
+    padding: 4%;
+    width: 30%;
+   
+}
+
+.counter {
+    background-color: hsl(223, 64%, 98%);
+    padding: 4%;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+
+
+.same {
+    display: flex;
+    gap:10px;
+ 
+}
+
+
+p {
+    font-size: 18px ;
+    color: hsl(219, 9%, 45%);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.discount {
+    
+    font-size: 16px;
+    margin-left: 10px ;
+    padding:2px  5px;
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 3px;
+}
+
+.op {
+    
+    text-decoration:line-through;
+    line-height: 89%;
+    color: hsl(219, 9%, 45%);
+}
+
+
+
+/* lightbox */
+
+
+#lightbox {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgb(0,0,0,0.6);
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    display: none;
+}
+
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#lightbox .container1 {
+    margin: 60% 30%;
+    gap:10px
+}
+
+
